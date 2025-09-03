@@ -5,9 +5,12 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: welcome message
         run: echo "my first Github action Job"
       - name: list files
         run: ls  
+      - NAME: MAKE SCRIPT EXECUTAB;E
+        run: chmod +x hello.sh
       - name: run Hello
         run: ./hello.sh
