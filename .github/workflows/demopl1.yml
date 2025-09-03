@@ -10,7 +10,7 @@ jobs:
         run: echo "my first Github action Job"
       - name: list files
         run: ls  
-      - NAME: MAKE SCRIPT EXECUTAB;E
+      - name: make script executable;e
         run: chmod +x hello.sh
       - name: run Hello
         run: ./hello.sh
