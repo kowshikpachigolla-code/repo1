@@ -3,7 +3,7 @@ on: push
 
 jobs:
   first_job:
-    runs-on: ubuntu-latest
+    runs-on: githubg2
     steps:
       - uses: actions/checkout@v4
       - name: welcome message
@@ -14,3 +14,17 @@ jobs:
         run: chmod +x hello.sh
       - name: run Hello
         run: ./hello.sh
+
+  second_job:
+    runs-on: githubg2
+    steps:
+      - uses: actions/checkout@v4
+      - name: welcome message
+        run: echo "my second Github action Job"
+      - name: list files
+        run: ls  
+      - name: make script executable;e
+        run: chmod +x hello.sh
+      - name: run Hello
+        run: ./hello.sh
+
